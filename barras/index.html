@@ -1,0 +1,20 @@
+<html>
+
+<head>
+
+    <!-- Cargamos las clases por orden de ejecucion. Para poder crear barras necesitamos traernos barras.
+    Esto es como si fuera un import de java, solo que de forma burda en javascript se haria así. De forma
+    limpia se podria hacer con require o node -->
+    <script src="Bar.js"></script>
+
+    <!-- traemos los estilos-->
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<!-- nuestras uniquePages siempre tienen el div de id app. Es nuestro holamundo -->
+<div id="app"></div>
+</body>
+
+<!-- es buena costumbre llamar a los javascript DESPUES de generar la pagina html, así que lo dejamos aqui, al final -->
+<script src="app.js"></script>
+</html>

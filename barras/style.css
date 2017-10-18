@@ -1,0 +1,27 @@
+
+.propertyWrapper {
+    border: green thin solid;
+    width: 130px;
+    padding: 2px;
+    margin:10px;
+}
+
+.barWrapper {
+    display: inline-flex;
+    /* inline flex nos permite que podamos crear una
+    distribucion en la que podemos manipular el origen
+    y la disposicion facilmente */
+    align-items: flex-end;
+    /* con este align-items conseguimos que todos los elementos
+    de las barras comiencen a dibujarse al final (end).
+    Si quitaras esto entonces aparecerían desde arriba en
+    vez de desde abajo */
+    padding: 4px;
+    height: 25px;
+}
+
+.bar {
+    width: 12px;
+    background-color: red;
+    margin: 2px;
+}
