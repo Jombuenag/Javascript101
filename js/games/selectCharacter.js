@@ -3,30 +3,29 @@ function setContent(id, content) {
     return document.getElementById(id).innerHTML = content;
 }
 
-arrActors = new Array();
-arrActors[0] = new Array();
-arrActors[1] = new Array();
+arrActors = [];
+arrActors[0] = [];
+arrActors[1] = [];
 
-arrActors[0][0] =  {id: 1, name: 'Takuma'};
-arrActors[0][1] =  {id: 2, name: 'Kortes'};
-arrActors[0][2] =  {id: 3, name: 'Kiddy'};
-arrActors[0][3] =  {id: 4, name: 'Kebab'};
-arrActors[1][0] =  {id: 5, name: 'Kim Kalpert'};
-arrActors[1][1] =  {id: 6, name: 'Kindows3.1'};
-arrActors[1][2] =  {id: 7, name: 'Dr Kidwel'};
-arrActors[1][3] =  {id: 8, name: 'Kindows Original'};
+arrActors[0][0] =  {id: 1, name: 'Takuma', str: "3", def:"4", vit:"3"};
+arrActors[0][1] =  {id: 2, name: 'Kortes', str: "6", def:"6", vit:"6"};
+arrActors[0][2] =  {id: 3, name: 'Kiddy', str: "2", def:"1", vit:"1"};
+arrActors[0][3] =  {id: 4, name: 'Kebab', str: "4", def:"3", vit:"4"};
+arrActors[1][0] =  {id: 5, name: 'Kim Kalpert', str: "3", def:"3", vit:"3"};
+arrActors[1][1] =  {id: 6, name: 'Kindows3.1', str: "2", def:"3", vit:"4"};
+arrActors[1][2] =  {id: 7, name: 'Dr Kidwel', str: "3", def:"5", vit:"2"};
+arrActors[1][3] =  {id: 8, name: 'Kindows Original', str: "1", def:"2", vit:"3"};
 
-champions = [];
+characters = [];
 arrActors.forEach(row => {
     row.forEach(champ  => {
-        champions.push(champ);
+        characters.push(champ);
     });
-})
+});
 
 const totalRows = 2;
 const totalCols = 4;
 let activeActor = 1;
-let jsonActors = JSON.stringify(arrActors);
 
 let content = '<table class="characterSelector">';
 for (let row=0; row<totalRows; row++) {
@@ -49,18 +48,21 @@ content += '</table>';
 setContent('characterSelection',content);
 
 function setActiveActor(index) {
-    debugger
+
     activeActor = index;
     let urlMarquee = "res/characters/p1marquee.png";
     const $selectedActorCell = $(`.characterSelector td[actorId="${index}"]`);
     $selectedActorCell.css('background-image', 'url("'+ urlMarquee +'")');
-    setActorName();
+    setActorStats();
 }
 
 setActiveActor(1);
 
-function setActorName() {
-    setContent('characterName', champions.find(x => x.id === activeActor).name)
+function setActorStats() {
+    setContent('characterName', characters.find(x => x.id === activeActor).name);
+    setContent('p1str',characters.find(x => x.id === activeActor).str);
+    setContent('p1def',characters.find(x => x.id === activeActor).def);
+    setContent('p1vit',characters.find(x => x.id === activeActor).vit);
 }
 
 function disableActiveActor() {
@@ -118,13 +120,13 @@ function createAudio() {
     return audio;
 }
 
-// function createBacktrack() {
-//     var audio = document.createElement('audio');
-//     audio.volume = 0.15;
-//     audio.loop;
-//     audio.src  = 'res/sounds/echovalley.mp3';
-//     return audio;
-//
-// }
-// var test = createBacktrack();
-// test.play();
+function createBacktrack() {
+    var audio = document.createElement('audio');
+    audio.volume = 0.35;
+    audio.loop;
+    audio.src  = 'res/sounds/echovalley.mp3';
+    return audio;
+
+}
+var test = createBacktrack();
+test.play();

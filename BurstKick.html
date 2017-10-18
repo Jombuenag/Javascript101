@@ -7,24 +7,15 @@
 
 
     <style>
-
         #backgroundSelection{
             background-image: url("res/backgrounds/background.jpg");
-            height: 100vh; /* For 100% screen height */
-            width:  100vw; /* For 100% screen width */
+            height: 1080px; /* For 100% screen height */
+            width:  1920px; /* For 100% screen width */
         }
-
-
 
         #characterSelection {
             /*ADD MARGIN TO CHARACTER*/
             margin-top: 10%;
-            margin-left: 23%;
-        }
-
-        #characterName{
-            font-size: 35px;
-            margin-top: 5%;
             margin-left: 23%;
         }
 
@@ -40,11 +31,33 @@
             padding: 10px;
             height: 256px;
         }
+        #p1stats {
+            font-size: 35px;
+            margin-top: 50px;
+            margin-left: 15px;
+        }
+        #p1strimg{
+            background-image: url("res/characters/str.png");
+            background-repeat: no-repeat;
+        }
+        #p1defimg{
+            background-image: url("res/characters/def.png");
+            background-repeat: no-repeat;
+        }
+        #p1vitimg{
+            background-image: url("res/characters/vit.png");
+            background-repeat: no-repeat;
+        }
+        #characterName{
+            display: inline;
+            font-size: 35px;
+            margin-top: 50px;
+            margin-left: 65px;
+        }
+
     </style>
 
 </head>
-
-
 
 <body>
 
@@ -52,7 +65,13 @@
     <div class="container" id="backgroundSelection">
         <div class="row row-fluid" id="characterSelection"></div>
         <div class="characterName" id="characterName"></div>
+        <section class="p1stats" id="p1stats">
+            <section id="p1strimg"><h3 style="margin-left: 85px;" id="p1str"></h3></section>
+            <section id="p1defimg"><h3 style="margin-left:85px;" id="p1def"></h3></section>
+            <section id="p1vitimg"><h3 style="margin-left:85px;" id="p1vit"></h3></section>
+        </section>
     </div>
+
 
 
 </div>
