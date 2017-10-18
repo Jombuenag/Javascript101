@@ -61,11 +61,9 @@ setActiveActor(1);
 function setActorStats() {
     setContent('characterName', characters.find(x => x.id === activeActor).name);
 
-
-    setContent('p1str',characters.find(x=> x.id === activeActor).str);
-
-    setContent('p1def',characters.find(x => x.id === activeActor).def);
-    setContent('p1vit',characters.find(x => x.id === activeActor).vit);
+    ['str','def','vit'].forEach(stat => {
+        setContent(`p1${stat}`,`<img src="res/characters/stats${characters.find(x=> x.id === activeActor)[stat]}.png" />`);
+    });
 }
 
 function disableActiveActor() {
