@@ -29,6 +29,16 @@
       <change type="DELETED" beforePath="$USER_HOME$/inspection/Default.xml" afterPath="" />
       <change type="DELETED" beforePath="$USER_HOME$/ui.lnf.xml" afterPath="" />
       <change type="DELETED" beforePath="$USER_HOME$/web-browsers.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/characters/stats1.png" afterPath="$PROJECT_DIR$/res/characters/stats1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/characters/stats10.png" afterPath="$PROJECT_DIR$/res/characters/stats10.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/characters/stats2.png" afterPath="$PROJECT_DIR$/res/characters/stats2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/characters/stats3.png" afterPath="$PROJECT_DIR$/res/characters/stats3.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/characters/stats4.png" afterPath="$PROJECT_DIR$/res/characters/stats4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/characters/stats5.png" afterPath="$PROJECT_DIR$/res/characters/stats5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/characters/stats6.png" afterPath="$PROJECT_DIR$/res/characters/stats6.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/characters/stats7.png" afterPath="$PROJECT_DIR$/res/characters/stats7.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/characters/stats8.png" afterPath="$PROJECT_DIR$/res/characters/stats8.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/characters/stats9.png" afterPath="$PROJECT_DIR$/res/characters/stats9.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/BurstKick.html" afterPath="$PROJECT_DIR$/BurstKick.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/games/selectCharacter.js" afterPath="$PROJECT_DIR$/js/games/selectCharacter.js" />
@@ -61,35 +71,42 @@
     <favorites_list name="CVME" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BurstKick.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/BurstKick.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="619">
-              <caret line="72" column="37" lean-forward="false" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#0;n#section#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#0;n#section#1;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h3#0;n#section#2;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="selectCharacter.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/games/selectCharacter.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="64" column="68" lean-forward="false" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="68" />
-              <folding>
-                <marker date="1508347119613" expanded="true" signature="1202:1280" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="BurstKick.html" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/BurstKick.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="17">
+                  <caret line="37" column="29" lean-forward="false" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
+                  <folding>
+                    <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="selectCharacter.js" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/js/games/selectCharacter.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="196">
+                  <caret line="37" column="12" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
+                  <folding>
+                    <marker date="1508954453081" expanded="true" signature="1513:1591" ph="..." />
+                    <marker date="1508954453081" expanded="true" signature="2003:2021" ph="..." />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -170,8 +187,8 @@
         <option value="$PROJECT_DIR$/php/addBuilding.php" />
         <option value="$PROJECT_DIR$/js/Buildings.js" />
         <option value="$PROJECT_DIR$/php/retrieveBuildings.php" />
-        <option value="$PROJECT_DIR$/js/games/selectCharacter.js" />
         <option value="$PROJECT_DIR$/BurstKick.html" />
+        <option value="$PROJECT_DIR$/js/games/selectCharacter.js" />
       </list>
     </option>
   </component>
@@ -190,7 +207,8 @@
       <path value="C:\xampp\php\PEAR" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="3" />
     <option name="width" value="960" />
     <option name="height" value="1080" />
   </component>
@@ -244,7 +262,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -252,10 +269,33 @@
               <item name="CVME" type="b2602c69:ProjectViewProjectNode" />
               <item name="Javascript101" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="CVME" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Javascript101" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="CVME" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Javascript101" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="js" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="games" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="CVME" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Javascript101" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="res" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="CVME" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Javascript101" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="res" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="characters" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -497,6 +537,13 @@
       <workItem from="1508255613485" duration="3551000" />
       <workItem from="1508324660420" duration="6156000" />
       <workItem from="1508344095683" duration="3383000" />
+      <workItem from="1508517143565" duration="1285000" />
+      <workItem from="1508528835761" duration="1285000" />
+      <workItem from="1508615704807" duration="147000" />
+      <workItem from="1508620089960" duration="780000" />
+      <workItem from="1508761746614" duration="1963000" />
+      <workItem from="1508785143878" duration="1253000" />
+      <workItem from="1508954398286" duration="105000" />
     </task>
     <task id="LOCAL-00001" summary="qweqw">
       <created>1499953144890</created>
@@ -516,7 +563,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="496905000" />
+    <option name="totallyTimeSpent" value="507921000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -528,12 +575,13 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12793177" sideWeight="0.47700533" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1652452" sideWeight="0.47700533" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32869378" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32995737" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3347548" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973656" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -848,7 +896,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="21" column="22" lean-forward="true" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -856,11 +903,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-          <folding>
-            <marker date="1508347163873" expanded="true" signature="1240:1270" ph="..." />
-            <marker date="1508347163873" expanded="true" signature="1902:2012" ph="..." />
-            <marker date="1508347163873" expanded="true" signature="1963:1993" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -868,7 +910,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -876,29 +917,27 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="19" column="7" lean-forward="true" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/BurstKick.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="619">
-          <caret line="72" column="37" lean-forward="false" selection-start-line="72" selection-start-column="37" selection-end-line="72" selection-end-column="37" />
+        <state relative-caret-position="17">
+          <caret line="37" column="29" lean-forward="false" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
           <folding>
             <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#section#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#section#1;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h3#0;n#section#2;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h3#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/games/selectCharacter.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="64" column="68" lean-forward="false" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="68" />
+        <state relative-caret-position="196">
+          <caret line="37" column="12" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="12" />
           <folding>
-            <marker date="1508347119613" expanded="true" signature="1202:1280" ph="..." />
+            <marker date="1508954453081" expanded="true" signature="1513:1591" ph="..." />
+            <marker date="1508954453081" expanded="true" signature="2003:2021" ph="..." />
           </folding>
         </state>
       </provider>

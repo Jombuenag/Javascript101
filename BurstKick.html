@@ -15,13 +15,13 @@
 
         #characterSelection {
             /*ADD MARGIN TO CHARACTER*/
-            margin-top: 10%;
+            margin-top: 06%;
             margin-left: 23%;
         }
 
         .characterSelector td {
             background-image: url("res/characters/marquee.png");
-            width: 256px;
+            width: 245px;
             margin: 50px;
             height: 256px;
         }
@@ -33,33 +33,50 @@
         }
         #p1stats {
             font-size: 35px;
-            margin-top: 50px;
-            margin-left: 15px;
         }
         #p1strimg{
+            margin-top: 40px;
             background-image: url("res/characters/str.png");
             background-repeat: no-repeat;
+        }
+        #p1defimg{
+            margin-top: 35px;
+
+            background-image: url("res/characters/def.png");
+            background-repeat: no-repeat;
+
+        }
+        #p1vitimg{
+            margin-top: 35px;
+
+            background-image: url("res/characters/vit.png");
+            background-repeat: no-repeat;
+
+        }
+        #p1str{
+            margin-left: 75px;
+            margin-bottom: 25px;
+            height: 30px;
+            width: 75px;
+        }
+        #p1def{
+            margin-left: 75px;
+            height: 30px;
             width: 75px;
 
         }
-        #p1defimg{
-            background-image: url("res/characters/def.png");
-            background-repeat: no-repeat;
-            width: 75px;
-        }
-        #p1vitimg{
-            background-image: url("res/characters/vit.png");
-            background-repeat: no-repeat;
+        #p1vit{
+            margin-left: 75px;
+            height: 30px;
             width: 75px;
 
         }
         #characterName{
-            display: inline;
             font-size: 35px;
-            margin-top: 50px;
             margin-left: 65px;
+            margin-bottom: 25px;
         }
-       </style>
+    </style>
 
 </head>
 
@@ -67,17 +84,23 @@
 
 <div id="hero" class="container-fluid" style="background: black">
     <div class="container" id="backgroundSelection">
+        <div class="container" id="countdown">
+            <h3 style="font-size: 35px; margin-left: 50%">30</h3>
+        </div>
         <div class="row row-fluid" id="characterSelection"></div>
         <div class="characterName" id="characterName"></div>
         <section class="p1stats" id="p1stats">
-            <section id="p1strimg"><h3 style="margin-left:85px;" id="p1str"></section>
-            <section id="p1defimg"><h3 style="margin-left:85px;" id="p1def"></h3></section>
-            <section id="p1vitimg"><h3 style="margin-left:85px;" id="p1vit"></h3></section>
+            <section id="p1strimg">
+                <div id="p1str"></div>
+            </section>
+            <section id="p1defimg">
+                <div id="p1def"></div>
+            </section>
+            <section id="p1vitimg">
+                <div id="p1vit"></div>
+            </section>
         </section>
     </div>
-
-
-
 </div>
 <div class="buttonGoBack">
     <a href="Main.html" class="btn btn-default"><span class="glyphicon glyphicon-triangle-left"></span> Go Back</a>

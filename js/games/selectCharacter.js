@@ -7,14 +7,14 @@ arrActors = [];
 arrActors[0] = [];
 arrActors[1] = [];
 
-arrActors[0][0] =  {id: 1, name: 'Takuma', str: "3", def:"4", vit:"3"};
-arrActors[0][1] =  {id: 2, name: 'Kortes', str: "6", def:"6", vit:"6"};
-arrActors[0][2] =  {id: 3, name: 'Kiddy', str: "2", def:"1", vit:"1"};
-arrActors[0][3] =  {id: 4, name: 'Kebab', str: "4", def:"3", vit:"4"};
-arrActors[1][0] =  {id: 5, name: 'Kim Kalpert', str: "3", def:"3", vit:"3"};
-arrActors[1][1] =  {id: 6, name: 'Kindows3.1', str: "2", def:"3", vit:"4"};
-arrActors[1][2] =  {id: 7, name: 'Dr Kidwel', str: "3", def:"5", vit:"2"};
-arrActors[1][3] =  {id: 8, name: 'Kindows Original', str: "1", def:"2", vit:"3"};
+arrActors[0][0] =  {id: 1, name: 'Takuma', str: "7", def:"7", vit:"6"};
+arrActors[0][1] =  {id: 2, name: 'Kortes', str: "10", def:"8", vit:"9"};
+arrActors[0][2] =  {id: 3, name: 'Kiddy', str: "2", def:"3", vit:"6"};
+arrActors[0][3] =  {id: 4, name: 'Kebab', str: "3", def:"2", vit:"2"};
+arrActors[1][0] =  {id: 5, name: 'Kim Kalpert', str: "2", def:"3", vit:"6"};
+arrActors[1][1] =  {id: 6, name: 'Kindows3.1', str: "3", def:"3", vit:"3"};
+arrActors[1][2] =  {id: 7, name: 'Dr Kidwel', str: "4", def:"7", vit:"6"};
+arrActors[1][3] =  {id: 8, name: 'Kindows Original', str: "4", def:"4", vit:"4"};
 
 characters = [];
 arrActors.forEach(row => {
@@ -26,6 +26,17 @@ arrActors.forEach(row => {
 const totalRows = 2;
 const totalCols = 4;
 let activeActor = 1;
+
+setActiveActor(1);
+
+function setActiveActor(index) {
+
+    activeActor = index;
+    let urlMarquee = "res/characters/p1marquee.gif";
+    const $selectedActorCell = $(`.characterSelector td[actorId="${index}"]`);
+    $selectedActorCell.css('background-image', 'url("'+ urlMarquee +'")');
+    setActorStats();
+}
 
 let content = '<table class="characterSelector">';
 for (let row=0; row<totalRows; row++) {
@@ -42,19 +53,9 @@ for (let row=0; row<totalRows; row++) {
     }
     content += '</tr>';
 }
-
 content += '</table>';
 
 setContent('characterSelection',content);
-
-function setActiveActor(index) {
-
-    activeActor = index;
-    let urlMarquee = "res/characters/p1marquee.png";
-    const $selectedActorCell = $(`.characterSelector td[actorId="${index}"]`);
-    $selectedActorCell.css('background-image', 'url("'+ urlMarquee +'")');
-    setActorStats();
-}
 
 setActiveActor(1);
 
@@ -62,7 +63,7 @@ function setActorStats() {
     setContent('characterName', characters.find(x => x.id === activeActor).name);
 
     ['str','def','vit'].forEach(stat => {
-        setContent(`p1${stat}`,`<img src="res/characters/stats${characters.find(x=> x.id === activeActor)[stat]}.png" />`);
+        setContent(`p1${stat}`,`<img src="res/characters/stats${characters.find(x=> x.id === activeActor)[stat]}.png" style="margin-top: -33px;" />`);
     });
 }
 
@@ -115,7 +116,7 @@ $("body").keydown(function(e) {
 function createAudio() {
 
     var audio = document.createElement('audio');
-    audio.volume = 0.15;
+    audio.volume = 0.25;
     audio.loop;
     audio.src    = 'res/sounds/charactersound.mp3';
     return audio;
@@ -123,7 +124,7 @@ function createAudio() {
 
 // function createBacktrack() {
 //     var audio = document.createElement('audio');
-//     audio.volume = 0.35;
+//     audio.volume = 0.15;
 //     audio.loop;
 //     audio.src  = 'res/sounds/echovalley.mp3';
 //     return audio;
